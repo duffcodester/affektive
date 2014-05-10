@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Demo</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title>Matthew Watson</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0 user-scalable=no'>
+    <%= stylesheet_link_tag 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/redmond/jquery-ui.css', 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= render 'layouts/shim' %>
+  </head>
+  <body>
+    <div class='container' id='container-fix'>
+      <%= yield %>
+      <%= render "layouts/footer"%>
+    </div>
+  </body>
 </html>
