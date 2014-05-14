@@ -1,50 +1,79 @@
-<center>
-  <h1>MATTHEW WATSON</h1>
-  <hr class='name-border' />
-  <h4 class='header-fix'>Colorado Business Attorney</h4>
-  <strong>
-    <%= link_to '303-718-6270','tel:303-718-6270' %> |
-    <%= mail_to 'Matthew@MatthewWatson.us' %>
-  </strong>
-  <br><br><br><br>
+<h1>AFFEKTIVE SOFTWARE</h1>
 
-  <table>
-    <tr>
-      <td style="vertical-align:top">
-        <div class='hidden-xs'>
-          <img src='/images/mattw.jpg' alt='mattw' height='175px' width='175px', class='img-circle'/>
-        </div>
-        <div class='visible-xs'>
-          <img src='/images/mattw.jpg' alt='mattw' height='100px' width='100px', class='img-circle'/>
-        </div>
-      </td>
-      <td>
-        <ul>
-          <li><h4>Business Formation & Compliance</h4></li>
-          <li><h4>Business Aquisitions</h4></li>
-          <li><h4>Vendor & Supplier Agreements</h4></li>
-          <li><h4>Software Licensing</h4></li>
-          <li><h4>Trademarks</h4></li>
-          <li><h4>Wills & Estates</h4></li>
-        </ul>
-      </td>
-    </tr>
-  </table>
+<br><br><hr>
 
-  <h3>
-    <p>"Matthew Watson is great. He saved my life!" </p>
-  </h3>
-  <cite> -- Elvis A. Presley</cite>
+<div class='table-width-desktop'>
+  <div class='row' align='center'>
+    <div class='col-md-6'>
+      <h3> CONTACT </h3>
+      <br>
+      <P>
+        <strong class='header-color'>AFFEKTIVE SOFTWARE LLC<br>
+        LAKEWOOD, CO</strong><br>
+        <%= link_to '303-921-8628', 'tel:303-921-8628' %><br>
+        <%= mail_to 'team@affektive.com' %>
+      </P>
 
-  <h3>
-    <p>"Matthew Watson actually invented general relativity." </p>
-  </h3>
-  <cite> -- Albert Einstein</cite>
+      <P>
+        <strong class='header-color'>JOSH DUFFY</strong><br>
+        <%= link_to '303-921-8628', 'tel:303-921-8628' %><br>
+        <%= mail_to 'josh@affektive.com' %>
+      </P>
 
-</center>
+      <P>
+        <strong class='header-color'>MICHAEL PIERCE</strong><br>
+        <%= link_to '720-387-9691', 'tel:720-387-9691' %><br>
+        <%= mail_to 'michael@affektive.com' %>
+      </P>
+
+      <P>
+        <strong class='header-color'>KELTON MANZANARES</strong><br>
+        <%= link_to '303-919-5134', 'tel:303-919-5134' %><br>
+        <%= mail_to 'kelton@affektive.com' %>
+      </P>
+    </div>
 
 
+    <div class='col-md-6'>
+      <h3> GENERAL ENQUIRIES </h3>
+      <br>
 
+      <center>
+
+      <div align='center' style='width: 300px;'>
+        <%= bootstrap_form_for(@contact) do |f| %>
+          <div class='pull-left'>
+          <p> NAME </p>
+          </div>
+          <div class='pull-right'>
+          <p class='header-color'> Required </p>
+          </div>
+          <%= f.text_field :name, hide_label: :true %>
+          <div class='pull-left'>
+          <p> EMAIL </p>
+          </div>
+          <div class='pull-right'>
+          <p class='header-color'> Required </p>
+          </div>
+          <%= f.text_field :email, hide_label: :true %>
+          <div class='pull-left'>
+          <p> MESSAGE </p>
+          </div>
+          <div class='pull-right'>
+          <p class='header-color'> Required </p>
+          </div>
+          <%= f.text_field :message, hide_label: :true %>
+
+          <%= f.primary 'Submit' %>
+
+        <% end %>
+      </div>
+
+      </center>
+
+    </div>
+  </div>
+</div>
 
 
 

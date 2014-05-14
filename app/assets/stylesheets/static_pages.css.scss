@@ -10,12 +10,12 @@ $lightgrey: #999;
 
 html {
   overflow-y: scroll;
-  background-color: #FAFAFA;
+  background-color: #2D2D2D;
 }
 
 body {
   padding-top: 0px;
-  background-color: #FAFAFA;
+  background-color: #2D2D2D;
 
 }
 
@@ -27,20 +27,12 @@ textarea {
   resize: vertical;
 }
 
-.center {
-  text-align: center;
-
-  h1 {
-  margin-bottom: 10px;
-  }
-}
-
 /* typography */
 
-h1, h2, h3, h4, h5, h6, p, cite, strong {
+h1, h2, h3, h4, h5, h6, p, cite, strong, address {
   line-height: 1;
-  font-family: 'Baskerville';
-  color: black;
+  font-family: 'Lucida Grande';
+  color: white;
 }
 
 h1 {
@@ -66,8 +58,8 @@ h4 {
 
 }
 
-.header-fix {
-  margin-bottom: 5px;
+.header-color {
+  color: #BB1232
 }
 
 P {
@@ -81,38 +73,7 @@ hr {
     width: 60%;
 }
 
-.name-border {
-   background:black; border:0; height:1px
+.table-width-desktop {
+  width: 60%;
+  margin: 0 auto;
 }
-
-/* Footer */
-
-footer {
-  margin-top: 45px;
-  padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: $lightgrey;  //defined via bootstrap-sass gem
-}
-
-footer a {
-  color: #555;
-}
-
-footer a:hover {
-  color: #222;
-}
-
-footer small {
-  float: left;
-}
-
-footer ul {
-  float: left;
-  list-style: none;
-}
-
-footer ul li {
-  float: left;
-  margin-left: 10px;
-}
-

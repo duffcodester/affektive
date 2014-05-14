@@ -4,6 +4,9 @@ Demo::Application.routes.draw do
 
   root 'static_pages#index'
 
+  match '/contacts', to: 'contacts#new', via: 'get'
+  resources "contacts", only: [:new, :create]
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
