@@ -3,13 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @import "bootstrap";
-@font-face{
-   font: {
-        font-family: '‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;';
-        font-weight: normal;
-        font-style: normal;
-    }
-}
 
 /* universal */
 
@@ -17,10 +10,13 @@ $lightgrey: #999;
 
 html {
   overflow-y: scroll;
+  background-color: #FAFAFA;
 }
 
 body {
   padding-top: 0px;
+  background-color: #FAFAFA;
+
 }
 
 section {
@@ -41,8 +37,10 @@ textarea {
 
 /* typography */
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p, cite, strong {
   line-height: 1;
+  font-family: 'Baskerville';
+  color: black;
 }
 
 h1 {
@@ -50,6 +48,7 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 0px;
   text-align: center;
+
 }
 
 h2 {
@@ -61,6 +60,16 @@ h2 {
   color: $lightgrey;
 }
 
+h4 {
+  margin-top: 0px;
+  margin-bottom: 25px;
+
+}
+
+.header-fix {
+  margin-bottom: 5px;
+}
+
 P {
   font-size: 1.1em;
   line-height: 1.7em;
@@ -69,8 +78,13 @@ P {
 hr {
     padding: 0px;
     margin-top: 0px;
-    width: 40%;
+    width: 60%;
 }
+
+.name-border {
+   background:black; border:0; height:1px
+}
+
 /* Footer */
 
 footer {
@@ -102,36 +116,3 @@ footer ul li {
   margin-left: 10px;
 }
 
-@media (min-width: 992px) {
-  .fixwidth {
-    width: 60%;
-    margin: 0 auto;
-  }
-
-  .box-position {
-    position:absolute;
-    top: 33%;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-  }
-}
-
-@media (max-width: 991px) {
-  .fixwidth {
-    width: 95%;
-    margin: 0 auto;
-  }
-
-  .box-position {
-    position:absolute;
-    top: 33%;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-  }
-}
-
-.box {
-  background-color:#FFFFFF;
-}
