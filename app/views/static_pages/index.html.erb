@@ -1,14 +1,15 @@
-<h1>AFFEKTIVE SOFTWARE</h1>
+<h1 style='font-size:55px'>AFFEKTIVE SOFTWARE</h1>
 
 <br><br><hr>
 
 <div class='table-width-desktop'>
   <div class='row' align='center'>
-    <div class='col-md-6'>
+    <div class='col-md-2'></div>
+    <div class='col-md-3'>
       <h3> CONTACT </h3>
       <br>
       <P>
-        <strong class='header-color'>AFFEKTIVE SOFTWARE LLC<br>
+        <strong class='header-color'>AFFEKTIVE SOFTWARE<br>
         LAKEWOOD, CO</strong><br>
         <%= link_to '303-921-8628', 'tel:303-921-8628' %><br>
         <%= mail_to 'team@affektive.com' %>
@@ -33,14 +34,13 @@
       </P>
     </div>
 
+    <div class='visible-xs'><br><br><hr style='width: 100%'><br></div>
 
-    <div class='col-md-6'>
-      <h3> GENERAL ENQUIRIES </h3>
+    <div class='col-md-5'>
+      <h3> GENERAL INQUIRIES </h3>
       <br>
 
-      <center>
-
-      <div align='center' style='width: 80%;'>
+      <div align='right' style='width: 100%;'>
         <%= bootstrap_form_for(@contact) do |f| %>
           <div class='pull-left'>
           <p> NAME </p>
@@ -62,17 +62,11 @@
           <div class='pull-right'>
           <p class='header-color'> Required </p>
           </div>
-          <%= f.text_field :message, hide_label: :true %>
-
-          <br>
-          <hr style='width: 100%'>
-
+          <%= f.text_area :message, size:'20x5', hide_label: :true %>
           <%= f.primary 'Submit', style:'width: 100%;' %>
-
         <% end %>
       </div>
-
-      </center>
+      <div class='col-md-2'></div>
 
     </div>
   </div>
