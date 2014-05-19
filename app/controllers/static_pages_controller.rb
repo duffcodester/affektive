@@ -5,5 +5,5 @@ class StaticPagesController < ApplicationController
     #   @message = params[:message]
     #   if @email?
     #     ContactMailer.contact_email(@name, @email, @message).deliver
-    # end
+    end
 end
