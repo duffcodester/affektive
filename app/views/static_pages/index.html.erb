@@ -1,6 +1,7 @@
 <h1 style='font-size:55px'>AFFEKTIVE SOFTWARE</h1>
 
-<br><br><hr>
+<br><br>
+<hr>
 
 <div class='table-width-desktop'>
   <div class='row' align='center'>
@@ -41,7 +42,7 @@
       <br>
 
       <div align='right' style='width: 100%;'>
-        <%= bootstrap_form_for(@contact) do |f| %>
+        <%= bootstrap_form_tag(url: '/index', method: "post") do |f| %>
           <div class='pull-left'>
           <p> NAME </p>
           </div>
@@ -71,6 +72,3 @@
     </div>
   </div>
 </div>
-
-
-

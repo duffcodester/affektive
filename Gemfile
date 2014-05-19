@@ -17,6 +17,7 @@ gem 'bootstrap-sass', '~> 3.0.3.0'
 gem 'newrelic_rpm'
 gem 'mail_form'
 gem 'bootstrap_form'
+gem 'sendgrid'
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false
