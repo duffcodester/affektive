@@ -3,19 +3,24 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,900);
 
 /* universal */
 
 $lightgrey: #999;
 
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 html {
   overflow-y: scroll;
-  background-color: #2D2D2D;
+  background-color: #EEEEEE;
 }
 
 body {
   padding-top: 0px;
-  background-color: #2D2D2D;
+  background-color: #EEEEEE;
 
 }
 

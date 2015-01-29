@@ -1,4 +1,161 @@
-<h1 style='font-size:55px'>AFFEKTIVE SOFTWARE</h1>
+<div id="fullpage">
+  <section class='intro' class="section">
+    <div class='content'>
+      <h1 id='header-text-position'>Affektive Software</h1>
+      <h1><span class='rotate' style='color: #1DE9B6;'>Strategy, Design, Development, Marketing</span></h1>
+   </div>
+  </section>
+
+  <section class='services' class="section">
+    <div class='content'>
+      <center>
+          <h2>Strategy</h2>
+            <h4>Software Strategy<br>
+                Marketing Strategy<br>
+                Technology Strategy</h4>
+          <h2>Design</h2>
+            <h4>UI/UX Design<br>
+            Brand Design<br>
+            Website Design</h4>
+          <h2>Development</h2>
+            <h4>Wed Development<br>
+            Mobile Web Development<br>
+            Ghost/Wordpress Development</h4>
+          <h2>Marketing</h2>
+            <h4>Content Marketing<br>
+            Email/SMS Marketing<br>
+            Social Network Markeing</h4>
+          </center>
+    </div>
+  </section>
+
+  <section class='intro' class="section">
+    <div class='content'>
+      <h1 id='header-text-position'>Our Portfolio</h1><br><br><br>
+      <center>
+      <div class='row'>
+        <div class='col-md-4'>
+          <h2 style='color: #1DE9B6;'>DigiQuatics</h2>
+          <%= image_tag('/images/dq_page.png', alt: 'App Pic', width:'350px;') %><br><br>
+          <a href="http://www.digiquatics.com" class="btn btn-default btn-lg active" role="button">See More</a>
+        </div>
+        <div class='col-md-4'>
+          <h2 style='color: #1DE9B6;'>Open Water Tracker</h2>
+          <%= image_tag('/images/owt_page.png', alt: 'App Pic', width:'350px;') %><br><br>
+          <a href="http://www.openwatertracker.com" class="btn btn-default btn-lg active" role="button">See More</a>
+        </div>
+        <div class='col-md-4'>
+          <h2 style='color: #1DE9B6;'>WeOwePro</h2>
+          <%= image_tag('/images/wop_page.png', alt: 'App Pic', width:'350px;') %><br><br>
+          <a href="http://www.weowepro.com" class="btn btn-default btn-lg active" role="button">See More</a>
+        </div>
+      </div>
+    </center>
+   </div>
+  </section>
+</div>
+
+
+
+<script>
+  $(document).ready(function() {
+      $('#fullpage').fullpage();
+  });
+</script>
+<script>
+
+  $(".rotate").textrotator({
+  animation: "dissolve", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+  separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+  speed: 3500 // How many milliseconds until the next word show.
+});
+</script>
+
+
+
+<style>
+#header-text-position{
+  position: relative;
+  top: 20%;
+  font-size: 80px;
+}
+h2 {
+  font-size: 35px;
+  color: #0091EA;
+}
+h4 {
+    color: #373B44;
+}
+
+
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+section {
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  height: 90vh;
+
+  &:nth-of-type(2n) {
+    background-color: #424242;
+  }
+}
+
+
+
+.intro {
+  height: 100vh;
+  background-color: #373B44;
+}
+.services {
+  height: 100vh;
+  background-color: #EEEEEE;
+}
+
+.content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+h1 {
+  font-size: 3em;
+  display: block;
+  color: white;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #C3CAD9;
+}
+
+a {
+  font-weight: 700;
+  color: #373B44;
+  position: relative;
+
+  &:hover{
+    opacity: 0.8;
+  }
+
+  &:active {
+    top: 1px;
+  }
+}
+</style>
+
+
+
+
+<h1 style='font-size:55px; color: black;'>AFFEKTIVE SOFTWARE</h1>
 
 <br><br>
 <hr>
@@ -7,7 +164,7 @@
   <div class='row' align='center'>
     <div class='col-md-2'></div>
     <div class='col-md-3'>
-      <h3> CONTACT </h3>
+      <h3 style='color:black;'> CONTACT </h3>
       <br>
       <P>
         <strong class='header-color'>AFFEKTIVE SOFTWARE<br>
@@ -38,7 +195,7 @@
     <div class='visible-xs'><br><br><hr style='width: 100%'><br></div>
 
     <div class='col-md-5'>
-      <h3> GENERAL INQUIRIES </h3>
+      <h3 style='color:black;'> GENERAL INQUIRIES </h3>
       <br>
 
       <div align='right' style='width: 100%;'>
