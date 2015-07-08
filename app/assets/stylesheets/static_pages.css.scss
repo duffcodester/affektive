@@ -2,6 +2,15 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,900);
 
 /* universal */
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
 $lightgrey: #999;
 * {
   font-family: 'Roboto', sans-serif;
